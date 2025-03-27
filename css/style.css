@@ -1,0 +1,272 @@
+@charset "utf-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+header,body,footer,div,h1,h2,nav,ul,li,a,section,img,h3,h4,p{
+    margin: 0; padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+hr{
+    display: none;
+}
+html,body{
+    background-color: #a9b9c4;
+    color: #333;
+    font-size: 16px;
+    font-family:'nanumsquare','맑은 고딕',sans-serif;
+}
+header{
+    width: 100%; height: 56px;
+    background-color: #fff;
+    position: fixed; left: 0; top: 0;
+    z-index: 9999;
+}
+header>div{
+    padding:14px 30px;
+    display: flex; position: relative;
+}
+header>div>h1{
+    font-size: 24px;
+}
+header>div>nav{
+    position: absolute; left: 50%; top: 50%; transform:translate(-50%,-50%);
+}
+header>div>nav>ul{
+    display: flex; gap: 134px;
+}
+header>div>nav>ul>li>a{
+    font-size: 20px; color: #333;
+    font-weight:bold;
+}
+main{
+    margin-top: 56px; overflow:hidden;
+}
+#visual{
+    width: 100%; height: 768px;
+    color: #fff;
+    background-image:url('../img/thumb.png');
+}
+#visual>div{
+    padding-top: 78px; padding-left: 343px;
+}
+#visual>div>h2{
+    font-size: 50px;
+    text-decoration: underline;
+    text-underline-offset:14px;
+}
+#visual>div>p{
+    font-size: 50px; font-weight: bold;
+    margin-top: 24px;
+}
+#visual>div>.more{
+    margin-top: 81px;
+    font-size: 32px;
+    font-weight: bold;
+}
+#visual>div>.more>h3{
+    margin-bottom: 30px;
+}
+#visual>div>.more>p{
+    margin-bottom: 30px;
+}
+#visual>div>.more>ul{
+    list-style:disc;
+    padding-left:60px;
+}
+#skills{
+    margin-bottom: 150px;
+    margin-top: 150px;
+}
+#skills>h2{
+    display: flex; justify-content:center;
+    font-size: 50px;
+    color: #fff;
+    margin-top: 21px;
+    margin-bottom: 54px;
+}
+#skills>div{
+    width: 100%; max-width:1082px;
+    margin: auto;
+}
+#skills>div>ul{
+    display: flex; justify-content:space-between;
+    flex-wrap:wrap;
+}
+#skills>div>ul>li{
+    background-color: #fff; width: 500px; height: 162px;
+    margin-bottom: 98px;
+}
+#skills>div>ul>li:last-child{
+    margin-bottom: 0;
+}
+#skills>div>ul>li>div{
+    display: flex; justify-content:space-between;
+    align-items:center; padding: 30px;
+}
+#skills>div>ul>li>div>img{
+    display: block; width: 112px; height: 112px;
+    object-fit:cover;
+}
+#skills>div>ul>li>div>p{
+    width: 264px; height: 92px;
+    text-align: center;
+    background-color: #ededed;
+    position: relative;
+}
+#skills>div>ul>li>div>p>span{
+    display: block;
+    position: absolute; left: 50%; top: 50%;
+    transform:translate(-50%,-50%);
+    font-weight: bold;
+}
+#projects{
+    margin-bottom: 150px;
+}
+#projects>h2{
+    font-size: 50px; color: #fff;
+    display: flex; justify-content:center;
+    margin-bottom: 54px;
+}
+#projects>div{
+    display: flex; justify-content:center;
+}
+#projects>div>ul>li{
+    width: 1320px; padding-top: 50px; padding-bottom: 20px;
+    background-color:#A8D8D8;
+    display: flex; justify-content:center;
+    align-items:flex-start; flex-direction:column;
+    padding-left: 60px;
+    margin-bottom: 48px;
+    box-sizing: border-box;
+}
+#projects>div>ul>li:hover{
+    cursor:pointer;
+}
+#projects>div>ul>li:last-child{
+    margin-bottom: 0;
+}
+#projects>div>ul>li>img{
+    display: block;
+    width: 1200px; height: 700px;
+    box-sizing: border-box;
+    object-fit:cover;
+    border: 10px solid #ededed;
+    box-shadow:4px 4px 4px 2px rgba(0,0,0,0.5);
+}
+#projects>div>ul>li>div{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+#projects>div>ul>li>div>h3{
+    font-size: 30px; font-weight: bold;
+}
+#projects>div>ul>li>div>div>ul{
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+#projects>div>ul>li>div>div>ul>li>span{
+    padding: 10px 20px;
+    background-color: #191;
+    border-radius: 30px;
+    display: flex; display: block;
+    justify-content:center; align-items:center;
+    color: #fff;
+}
+#projects>div>ul>.pro1>div>div>ul>li:first-child>span{
+    background-color: #454545;
+}
+#projects>div>ul>.pro2>div>div>ul>li:last-child>span{
+    background-color: #09f;
+}
+#achievements{
+    margin-bottom: 150px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}
+#achievements>h2{
+    font-size: 50px; color: #fff;
+    display: flex; justify-content: center;
+    margin-bottom: 54px;
+}
+#achievements>div{
+    margin-left: auto; margin-right: auto;
+    width:1153px; position: relative;
+}
+#achievements>div>.left{
+    position: absolute; top: 50%; left: -100px; transform: translateY(-50%);
+    display: block; width: 64px; height: 64px; text-indent: -9999px;
+    background:url('../img/left.png') no-repeat center center;
+    background-size:cover;
+}
+#achievements>div>.right{
+    position: absolute; top: 50%; right: -100px; transform: translateY(-50%);
+    display: block; width: 64px; height: 64px; text-indent: -9999px;
+    background:url('../img/right.png') no-repeat center center;
+    background-size:cover;
+}
+#achievements>div>ul>li{
+    position: relative;
+}
+#achievements>div>ul>li>.innerbox{
+    position: absolute; left: 0; top: 0;
+    font-size: 50px; font-weight: bold; color: #fff;
+    padding-left: 76px; padding-top: 61px;
+}
+#achievements>div>ul>li>.innerbox>h4{
+    margin-bottom: 50px;
+}
+#achievements>div>ul>li>.innerbox>p{
+    font-weight: normal; font-size: 34px;
+}
+#contact{
+    margin-bottom: 50px;
+}
+#contact>h2{
+    font-size: 64px; display: flex; justify-content:center;
+    color: #000; margin-bottom: 50px;
+}
+#contact>div{
+    display: flex; justify-content: center;
+}
+#contact>div>ul{
+    display: flex; justify-content:space-between;
+    align-items: center; gap: 80px;
+}
+#contact>div>ul>li>div{
+    display: flex; gap: 54px;
+    align-items: center;
+}
+#contact>div>ul>li>div>img{
+    display: block; width: 80px; height: 80px;
+    object-fit:cover;
+}
+#contact>div>ul>li>div>div{
+    display: flex; align-items:flex-start;
+    flex-direction:column; gap: 10px;
+}
+#contact>div>ul>li>div>div>a{
+    color: #333;
+}
+.topBtn{
+    height: 60px; width: 60px; border-radius: 140px; position: fixed; right: 40px; bottom: 40px;
+    text-align: center; display: block; z-index: 10000; color: #333; font-weight: bold;
+    box-sizing: border-box; padding-top: 30px;
+    background:#fff url("../img/up.png") no-repeat top 10px center;
+    background-size:15px 15px;
+}
+footer{
+    width: 100%; margin-top: 50px;
+    padding:50px 0px; background-color:#454545;
+}
+footer>p{
+    font-size: 16px; text-align: center;
+    color: #fff; font-weight: bold;
+}
